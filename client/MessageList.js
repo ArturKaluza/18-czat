@@ -16,7 +16,7 @@ const MessageList = props => (
           <Message
             key={i}
             from={message.from}
-            text={message.text}
+            text={message.text || message.message} 
           />
         );
       })

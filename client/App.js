@@ -60,6 +60,7 @@ class App extends Component {
 messageReceive(message) {
   const messages = [message, ...this.state.messages];
   this.setState({messages});
+  console.log(this.state.messages);
 }
 
 chatUpdate(users) {
