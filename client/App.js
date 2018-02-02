@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   render() {
-    return this.state.name !== '' ? this.renderLayout() : this.renderUserForm();
+    return this.state.name.trim() !== '' ? this.renderLayout() : this.renderUserForm();
   }
 
   renderLayout() {
@@ -27,7 +27,8 @@ class App extends Component {
              ChatApp
            </div>
            <div className={styles.AppRoom}>
-             App room
+            <div>Name: {this.state.name}</div>
+            <div>App room</div> 
            </div>
          </div>
          <div className={styles.AppBody}>
@@ -60,7 +61,6 @@ class App extends Component {
 messageReceive(message) {
   const messages = [message, ...this.state.messages];
   this.setState({messages});
-  console.log(this.state.messages);
 }
 
 chatUpdate(users) {
@@ -76,6 +76,12 @@ handleMessageSubmit(message) {
 handleUserSubmit(name) {
   this.setState({name});
   socket.emit('join', name);
+  // informacja o dołączeniu nowego urzytkownika
+  const message = {
+    from : name,
+    text : ' joins the chat'
+  };
+  socket.emit('message', message);
 }
 
 };

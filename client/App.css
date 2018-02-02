@@ -28,7 +28,7 @@ body {
 .AppRoom {
     display: flex;
     width: 75vw;
-    justify-content: center;
+    justify-content: space-around;
     box-sizing: border-box;
     padding: 20px;
 }
