@@ -2,14 +2,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
+    background-image: url('https://static.pexels.com/photos/35886/phone-communication-call-select.jpg');
+    background-size: cover;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    background: rgba(18, 30, 63, 0.6);
+    color: #f4f4f4;
+    margin-bottom: 30px;
+}
+
+.title h1 {
+    height: 100px;
+    line-height: 100px;
+    font-size: 5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .UserInput {
     padding: 20px;
     font-size: 2em;
     border: 0;
-    border-bottom: 1px solid #ccc;
-    width: 510px;
+    border: 1px solid #121E3F;
+    width: 540px;
+    border-radius: 6px;
+    transition: .2s ease-in;
 }

@@ -15,10 +15,13 @@ class UserForm extends Component {
   handleChange(e) {
     this.setState({ name : e.target.value });
   }
-
+ 
   render() {
     return(
       <form className={styles.UserForm} onSubmit={e => this.handleSubmit(e)}>
+        <div className={styles.title}>
+          <h1 >Chat App</h1>
+        </div>
         <input
           className={styles.UserInput}
           placeholder='Write your nickname and press enter'

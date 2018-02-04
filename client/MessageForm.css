@@ -7,5 +7,18 @@
     flex: 1;
     padding: 20px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #9EB3EE;
+    background: #121E3F;
+    color: #f4f4f4;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    transition: .3s ease;
+}
+
+.MessageInput:focus {
+    background: #02040C;
+}
+
+.MessageInput::placeholder {
+    color: #9EB3EE;
 }

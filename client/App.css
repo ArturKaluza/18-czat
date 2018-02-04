@@ -1,5 +1,9 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700&subset=latin-ext');
+
+html, body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .App {
@@ -13,13 +17,17 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #9EB3EE;
+    background: #121E3F;
+    color: #9EB3EE;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .AppTitle {
     display: flex;
     width: 25vw;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #9EB3EE;
     justify-content: center;
     box-sizing: border-box;
     padding: 20px;
@@ -30,7 +38,10 @@ body {
     width: 75vw;
     justify-content: space-around;
     box-sizing: border-box;
-    padding: 20px;
+}
+
+.AppRoom span {
+    color: #f4f4f4;
 }
 
 .AppBody {

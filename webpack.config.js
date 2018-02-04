@@ -23,7 +23,7 @@ const plugins = [
       })
     );
   }
-
+  
  module.exports = {
   entry: (env !== 'production' ? [
       'react-hot-loader/patch',

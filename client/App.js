@@ -27,7 +27,9 @@ class App extends Component {
              ChatApp
            </div>
            <div className={styles.AppRoom}>
-            <div>Name: {this.state.name}</div>
+              <div>User name:
+                <span> {this.state.name}</span>
+              </div>
             <div>App room</div> 
            </div>
          </div>

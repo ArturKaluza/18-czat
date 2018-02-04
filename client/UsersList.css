@@ -4,13 +4,17 @@
     width: 25vw;
     justify-content: flex-start;
     flex-direction: column;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #9EB3EE;
+    background: #596EA6;
 }
 
 .UsersOnline {
     padding: 20px;
     text-align: center;
-    background: #ccc;
+    color: #9EB3EE;
+    background: #2F4172;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .UsersList {
@@ -19,8 +23,21 @@
 }
 
 .UserItem {
+    background: #121E3F;
+    color: #9EB3EE;
     list-style: none;
-    border-bottom: 1px solid #ccc;
+    border: 1px solid #9EB3EE;
+    border-left: none;
     padding: 20px;
-    margin: 0 0 0 20px;
+    margin: 5px 0 0 20px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    transition: .2s ease;
+}
+
+.UserItem:hover {
+    background: #02040C;
+    color: #f4f4f4;
+    transform: scale(1.02);
+    margin-right: 4px;
 }

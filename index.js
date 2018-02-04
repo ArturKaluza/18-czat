@@ -46,7 +46,6 @@ io.on('connection', (socket) => {
 io.on('connection', socket => {
   socket.on('message', message => {
     const {name} = userService.getUserById(socket.id);
-    console.log(message.text);
     socket.broadcast.emit('message', {
       message: message.text,
       from: name
@@ -55,5 +54,5 @@ io.on('connection', socket => {
 });
 
 server.listen(3000, () => {
-  console.log('listing on*:3000');
+  console.log('listing on port:3000');
 });
